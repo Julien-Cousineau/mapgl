@@ -1,0 +1,58 @@
+{
+  "name": "mapgl",
+  "version": "1.0.0",
+  "description": "WebGL wrapper",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack --mode production --config ./webpack.production.js",
+    "pretest": "eslint --fix src viz",
+    "prepare": "npm run test && npm run build",
+    "testold": "tape -r esm test/test.js | faucet",
+    "test": "",
+    "push": "git add . && git commit -m 'comment here' && git push -u origin master",
+    "patch": "npm version patch && npm publish --access=public",
+    "minor": "npm version minor && npm publish --access=public",
+    "major": "npm version major && npm publish --access=public",
+    "start": "webpack-dev-server --mode development --hot --disable-host-check --host $IP --port $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julien-Cousineau/mapgl.git"
+  },
+  "keywords": [
+    "webgl",
+    "selafin"
+  ],
+  "author": "Julien Cousineau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Julien-Cousineau/mapgl/issues"
+  },
+  "homepage": "https://github.com/Julien-Cousineau/mapgl#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@julien.cousineau/util": "^1.0.17",
+    "css-loader": "^1.0.1",
+    "d3-selection": "^1.3.2",
+    "eslint": "^5.9.0",
+    "eslint-config-mourner": "^3.0.0",
+    "esm": "^3.0.84",
+    "faucet": "0.0.1",
+    "file-loader": "^2.0.0",
+    "gl-matrix": "^2.8.1",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "slf-js": "0.0.6",
+    "style-loader": "^0.23.1",
+    "tape": "^4.9.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-glsl-loader": "^1.0.1"
+  }
+}
