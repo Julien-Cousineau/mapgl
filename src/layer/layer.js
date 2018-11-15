@@ -1,7 +1,7 @@
 import {Geometry} from '../geometry';
 import { extend } from '@julien.cousineau/util';
 import {Attribute,AttributeQuad,AttributeSLF} from '../attribute';
-import {LStyle} from '../style';
+import {LStyle} from '@julien.cousineau/layerstyle';
 import Primitive from './primitive';
 
 export default class Layer extends LStyle {

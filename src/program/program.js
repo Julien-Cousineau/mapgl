@@ -3,7 +3,7 @@ import {draw,createProgram} from '../helper';
 const {extend} = require('@julien.cousineau/util');
 import Shaders from '../shaders';
 import Texture from '../texture';
-import PStyle from '../style/program.js';
+import {PStyle} from '@julien.cousineau/layerstyle';
 export default class Program extends PStyle{
   constructor(options){
     super(options);

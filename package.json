@@ -1,6 +1,6 @@
 {
-  "name": "mapgl",
-  "version": "1.0.1",
+  "name": "@julien.cousineau/mapgl",
+  "version": "1.0.0",
   "description": "WebGL wrapper",
   "main": "src/index.js",
   "directories": {
@@ -34,6 +34,7 @@
   "homepage": "https://github.com/Julien-Cousineau/mapgl#readme",
   "dependencies": {},
   "devDependencies": {
+    "@julien.cousineau/layerstyle": "^1.0.2",
     "@julien.cousineau/util": "^1.0.17",
     "css-loader": "^1.0.1",
     "d3-selection": "^1.3.2",

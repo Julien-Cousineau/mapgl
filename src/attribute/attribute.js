@@ -2,7 +2,7 @@
 import Texture from '../texture';
 import {Program,ProgramQuad} from '../program';
 import { extend } from '@julien.cousineau/util';
-import {AStyle} from '../style';
+import {AStyle} from '@julien.cousineau/layerstyle';
 import {createArrayBuffer} from '../helper';
 import Shaders from '../shaders';
 export default class Attribute extends AStyle {
